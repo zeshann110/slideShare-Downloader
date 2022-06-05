@@ -31,7 +31,7 @@ button.addEventListener("click", async () => {
     const url = inputURL.value;
     // Fetch from API
     const response = await fetch(
-      "https://slideshare-image-api.herokuapp.com/api/slides/download?url=" +
+      "https://parthmaniar2.herokuapp.com/slideshare?url=" +
         url
     );
 
@@ -69,7 +69,7 @@ button.addEventListener("click", async () => {
 
     // Send PopUp when file downloaded
     alert.append(
-      new AlertPopUp("Downloaded...", {
+      new AlertPopUp("Your slides are downloaded! 😍", {
         color: "text-green-600",
         svg: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>  ',
       })
